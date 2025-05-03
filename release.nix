@@ -20,6 +20,7 @@ rec {
         
         cat > $out/bin/flask-app <<EOF
         #!/bin/sh
+        export PYTHONPATH=$PYTHONPATH
         ${pkgs.python3}/bin/python $out/src/main.py
         EOF
         
