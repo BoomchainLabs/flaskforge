@@ -13,6 +13,10 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
+args = "pip install Flask"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
 args = "python src/main.py"
 
 [[ports]]
